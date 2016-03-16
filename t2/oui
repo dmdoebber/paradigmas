@@ -1,0 +1,17 @@
+somaQuad :: Int -> Int -> Int
+somaQuad x y = (x^2) + (y^2)
+
+hasEqHeads :: [Int] -> [Int] -> Bool
+hasEqHeads lis1 lis2 = if head lis1 == head lis2 then True else False
+
+srName :: [String] -> [String]
+srName lis = map("Sr." ++) lis
+
+contSpace :: [Char] -> Int
+contSpace lis = length (filter (== ' ') lis) 
+
+funcList :: [Float] -> [Float]
+funcList lis = map((\n -> 3*n^2 +2/n +1)) lis
+
+contNeg :: [Int] -> [Int]
+contNeg lis = filter( < 0) lis
