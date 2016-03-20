@@ -18,3 +18,18 @@ contNeg lis = filter( < 0) lis
 
 contUmCem :: [Int] -> [Int]
 contUmCem lis = filter ((\x -> x > 0 && x < 101))lis
+
+maisNovos :: [Int] -> [Int]
+maisNovos lis = filter ((\x -> 1970 <= 2016-x)) lis
+
+retornaPares :: [Int] -> [Int]
+retornaPares lis = filter (even) lis
+
+charFound :: Char -> String -> Bool
+charFound _ "" = False
+charFound x y = if x == (head y) then True else charFound x (tail y)
+
+--takeWhile (\x -> x+5 <30) [5..40]
+
+ultimaLetra :: [String] -> [String]
+ultimaLetra lis =  filter ((\x -> last x == 'a')) lis
